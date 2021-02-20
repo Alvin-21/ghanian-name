@@ -11,11 +11,13 @@ function collectData() {
     let year = parseInt(formData.get('year').slice(2));
     let month = parseInt(formData.get('month'));
     const day = parseInt(formData.get('day'));
+    const gender = formData.get('gender');
 
     if(century === 23) {
         alert("yes");
     }
 
+    let index;
     function dayOfWeek() {
         if(month <= 2) {
             month += 10;
@@ -26,13 +28,27 @@ function collectData() {
         if(month === 11 || month === 12) {
             year -= 1;
         }
-        
-        let dayOfWeek = (day + Math.floor((2.6 * month) - 0.2) - (2 * century) + year + Math.floor(year / 4) + Math.floor(century / 4)) % 7;
-        
-        return dayOfWeek;
+
+        let weekDay = (day + Math.floor((2.6 * month) - 0.2) - (2 * century) + year + Math.floor(year / 4) + Math.floor(century / 4)) % 7;
+
+        if(weekDay < 0) {
+            weekDay += 7;
+        }
+        index = weekDay;
+        return weekDay;
     }
 
     alert(dayOfWeek());
+
+    const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+    if(gender === "male") {
+        alert(maleNames[index]);
+    } else {
+        alert(femaleNames[index]);
+    }
+
     document.forms[0].reset();
 }
 
