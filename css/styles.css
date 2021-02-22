@@ -1,0 +1,12 @@
+h1 {
+    /* border-style: solid; */
+    width: 400px;
+    padding: 5px;
+}
+
+.center {
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+    padding-top: 20px;
+}
