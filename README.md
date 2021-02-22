@@ -1,6 +1,6 @@
 # Ghanian Name
 
-#### This project reveals your Akan name, 13/02/2021
+#### This project reveals your Akan name, 20/02/2021
 
 #### By Alvin Awuor
 
