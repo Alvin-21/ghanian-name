@@ -49,7 +49,7 @@ function collectData() {
     if(month < 1 || month > 12 || day < 1 || day > 31) {
         alert("Please make sure you have entered the correct date.\nDay should be between 1-31 and Month should be between 1-12.");
     } else {
-        alert(name);
+        alert("Your Ghanian Name is: " + name);
     }
 
     document.forms[0].reset();
