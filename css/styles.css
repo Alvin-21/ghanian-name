@@ -14,17 +14,21 @@ h1 {
 
 .introduction {
     margin: 30px 0px;
+    background-color: rgb(245, 198, 192);
 }
 
 .wrapper {
     display: grid;
     justify-content: center;
+    background-color: salmon;
+    padding: 10px 0;
 }
 
 .form {
     border-style: solid;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    background-color: rgb(245, 198, 192);
 }
 
 .margin-top {
@@ -46,4 +50,13 @@ p, label {
     font-family: 'Big Shoulders Text', cursive;
     font-size: 20pt;
     letter-spacing: 0.04em;
+    color: maroon;
+}
+
+header {
+    background-color: salmon;
+}
+
+body {
+    background-color: maroon;
 }
