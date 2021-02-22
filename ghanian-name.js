@@ -39,9 +39,9 @@ function collectData() {
     const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
     if(gender === "male") {
-        alert(maleNames[index]);
+        alert("Your Ghanian Name is: " + maleNames[index]);
     } else {
-        alert(femaleNames[index]);
+        alert("Your Ghanian Name is: " + femaleNames[index]);
     }
 
     document.forms[0].reset();
