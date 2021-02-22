@@ -5,17 +5,12 @@ const wrapper = document.querySelector('.wrapper'),
 function collectData() {
 
     var formData = new FormData(form[0]);
-    alert(formData.get('first_name') + " " + formData.get('last_name') + " " + formData.get('gender') + " " + formData.get('year') + " " + formData.get('month') + " " + formData.get('day'));
 
     const century = parseInt(formData.get('year').slice(0, 2));
     let year = parseInt(formData.get('year').slice(2));
     let month = parseInt(formData.get('month'));
     const day = parseInt(formData.get('day'));
     const gender = formData.get('gender');
-
-    if(century === 23) {
-        alert("yes");
-    }
 
     let index;
     function dayOfWeek() {
