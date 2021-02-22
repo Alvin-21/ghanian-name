@@ -1,9 +1,10 @@
+// I got the below code from the following youtube video to help me manipulate data from the form input. https://www.youtube.com/watch?v=IAmcCrETKIc
 const wrapper = document.querySelector('.wrapper'),
       form = wrapper.querySelectorAll('.form'),
       submitInput = form[0].querySelector('input[type="submit"]');
 
+// The following youtube resource helped collect data from the forms. https://www.youtube.com/watch?v=IAmcCrETKIc
 function collectData() {
-
     var formData = new FormData(form[0]);
 
     const century = parseInt(formData.get('year').slice(0, 2));
@@ -34,8 +35,6 @@ function collectData() {
         return weekDay;
     }
 
-    alert(dayOfWeek());
-
     const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
@@ -52,9 +51,13 @@ function collectData() {
         alert("Your Ghanian Name is: " + name);
     }
 
+    // The following resource helped me reset the form after it has been submitted.
+    // input-to-object.html. (2021). Retrieved from https://gist.github.com/prof3ssorSt3v3/52ebd432bb7b8a155985a2f82509541d
     document.forms[0].reset();
 }
 
+// https://www.youtube.com/watch?v=IAmcCrETKIc
+// The above youtube video helped me load the function for collectData once the sumbit button has been clicked.
 document.addEventListener('DOMContentLoaded', function(){
     submitInput.addEventListener('click', collectData, false);
 }, false);
