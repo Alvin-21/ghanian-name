@@ -2,6 +2,7 @@ h1 {
     /* border-style: solid; */
     width: fit-content;
     padding: 5px;
+    font-family: 'Reggae One', cursive;
 }
 
 .center {
@@ -28,4 +29,21 @@ h1 {
 
 .margin-top {
     margin-top: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+h2, legend {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 24pt;
+}
+
+p, label {
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 20pt;
+    letter-spacing: 0.04em;
 }
